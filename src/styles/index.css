@@ -1,0 +1,161 @@
+@import './vars.css';
+
+@media screen and (max-device-width: 425px) {
+    .container-tab button {
+        font-size: 0px;
+    }
+    #container-display {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-device-width: 426px) {
+    .container-tab button {
+        font-size: 18px;
+    }
+    #container-display {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    user-select:0;
+    font-family: var(--font-style-main);
+}
+
+body,html {
+    height: 100vh;
+}
+
+header {
+    background-color: var(--color-main);
+    display:flex;
+    justify-content: space-between;
+}
+
+.main-Img {
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.main-Img .main-Name {
+    align-self: center;
+    font-size: 25px;
+    font-family: var(--font-style-main);
+    font-weight: 600;
+    user-select: none;
+}
+.main-Img img {
+    height: 64px;
+    margin: 0 10px;
+}
+
+.container-profile {
+    display: flex;
+    padding: 20px;
+    font-size: 15px;
+    color: black;
+}
+.container-profile img{
+    height: 32px;
+    margin: 0px;
+}
+.container-profile:hover {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.container-main {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.container-sidebar {
+    background-color: whitesmoke;
+    max-width: 300px;
+    display: flex;
+    text-wrap: wrap;
+}
+
+.container-sidebar ul {
+    list-style:none;
+    text-align: center;
+    padding-left: 0px;
+}
+
+input {
+    font-size: 16px;
+}
+
+.container-tab {
+text-align: center;
+
+}
+
+.container-tab.show-form {
+    border-bottom-style: groove;
+}
+
+.container-tab img {
+    max-height: 32px;
+}
+
+.container-tab button {
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: var(--font-style-main);
+    font-weight: 600;
+}
+
+.container-tab:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.container-tab:hover button {
+    background-color: var(--color-main);
+    color: white;
+    cursor: pointer;
+}
+
+.button-show-form {
+    display: flex;
+}
+
+#container-display {
+    width: 100%;
+
+}
+
+.item-enter {
+    opacity: 0;
+  }
+  
+  .item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .item-exit {
+    opacity: 1;
+  }
+  
+  .item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+#tabListC {
+    background-color: var(--color-main);
+}

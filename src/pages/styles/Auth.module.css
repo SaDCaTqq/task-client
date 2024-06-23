@@ -1,0 +1,58 @@
+* {
+    user-select: none;
+}
+
+.authPage {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.authBox {
+    position: absolute;
+    top:30%;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+}
+
+.authText {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.authText input {
+    margin: 10px;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authButton {
+    font-size: 20px;
+    padding: 0px 60px;
+    cursor: pointer;
+    border: 0px transparent;
+    border-radius: 30px;
+    background-color: lightblue;
+}
+
+.RegButton {
+    background-color: transparent;
+    border: transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.RegButton:hover {
+    text-decoration:underline;
+}

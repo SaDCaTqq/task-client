@@ -1,0 +1,54 @@
+@import '../../../../styles/vars.css';
+
+.tasksBox {
+    width: 60vw;
+}
+
+.tabName {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--font-style-main);
+    user-select: none;
+}
+
+.taskBox {
+    border: solid transparent 3px;
+    border-bottom: solid 1px;
+    padding: 10px;
+    padding: 5px;
+    display: flex;
+    min-height: 60px;
+    min-width: 200px;
+    position: relative;
+}
+
+.taskBox:hover {
+    background-color: var(--color-main);
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.taskText {
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.taskBox>input {
+    min-width: 30px;
+    margin-right: 10px;
+    cursor:pointer;
+} 
+
+.taskBox .taskName{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.taskBox .taskDesc{
+    font-size: 15px;
+    font-style: italic;
+}

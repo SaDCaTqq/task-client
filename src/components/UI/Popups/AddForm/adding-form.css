@@ -1,0 +1,106 @@
+@import '../../../../styles/vars.css';
+
+.adding-message {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+.adding-message.active {
+    transform: scale(1);
+}
+
+.content-message {
+    width: 70vw;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: white;
+    
+}
+
+.message-close {
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 30px;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid rgb(60, 60, 60);
+}
+.message-close img {
+    height: 25px;
+    user-select: none;
+}
+.message-close:hover {
+    cursor: pointer;
+}
+
+.form-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container>input,.form-container textarea {
+    margin-bottom:20px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.form-container textarea {
+    resize: none;
+}
+
+.input-date {
+    max-width: 218px;
+    text-align: center;
+}
+
+.date-conteiner {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+.date-conteiner input {
+    font-family:unset;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    margin-left: 5px;
+}
+
+.send-task {
+  align-self: center;
+  background-color:green;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--font-style-main);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  align-self: flex-end;
+}
+
+.send-task:hover {
+  background-color: #2c974b;
+}
+
+.message-header-name {
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    user-select: none;
+}

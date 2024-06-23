@@ -1,0 +1,39 @@
+@import '../../../styles/vars.css';
+
+.Input {
+  width: 80%;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  color: #212529;
+  border: 0;
+  font-family: var(--font-style-main);
+}
+.Input:focus {
+  outline: transparent;
+}
+
+.SearchBox {
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 1px;
+  display: flex;
+  border: 1px solid #bdbdbd;
+  background-clip: padding-box;
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 0.5rem;
+  height: 48px;
+}
+
+.SearchBox img {
+  background-color: transparent;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.SearchBox:hover img{
+  visibility:visible;
+}

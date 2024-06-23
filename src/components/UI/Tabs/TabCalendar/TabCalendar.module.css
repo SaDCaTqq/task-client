@@ -1,0 +1,75 @@
+@import '../../../../styles/vars.css'; 
+
+.task-box.calendar {
+    justify-content: left;
+    text-align: left;
+}
+
+.tasksBox {
+    width: 60vw;
+}
+
+.tabName {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--font-style-main);
+    user-select: none;
+}
+
+.taskBox {
+    border:dashed transparent 3px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    min-height: 60px;
+    min-width: 200px;
+}
+.taskBoxUntil {
+    border-color: yellowgreen;  
+}
+.taskBoxPassed {
+    border-color: lightcoral;  
+}
+
+.taskBox:hover {
+    border-style: solid;
+    transition: border 1s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.taskText {
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.taskBox:hover .taskText {
+    text-wrap: wrap;
+    word-break: break-all;
+}
+
+.taskBox>input {
+    min-width: 30px;
+    margin-right: 10px;
+    cursor:pointer;
+} 
+
+.taskBox .taskName{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.taskBox .taskDesc{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.datesContent {
+    font-size: 10px;
+    font-weight: 600;
+}
